@@ -1,0 +1,130 @@
+@import "../../styles/common";
+
+.convector {
+  width: 705px;
+  padding: 31px 41px 41px;
+  background-color: $base-color;
+  box-shadow: 0 4px 31px 25px rgba(0, 0, 0, 0.03);
+  border-radius: 24px;
+
+  .title {
+    @include space-mono-bold;
+    margin-bottom: 40px;
+    font-size: 26px;
+    line-height: 40px;
+    text-align: center;
+  }
+}
+
+
+.fees-container {
+  height: 182px;
+  display: flex;
+
+  .line {
+    width: 58px;
+    border-right: 2px solid $dark-blue;
+  }
+
+  .fees-info {
+    padding-left: 13px;
+    position: relative;
+    flex-grow: 1;
+
+    .title {
+      @include space-mono-bold;
+      font-size: 20px;
+      line-height: 28px;
+      position: absolute;
+      padding-left: 28px;
+      letter-spacing: -0.025em;
+      left: -6px;
+      top: 23px;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 3px solid $dark-blue;
+        border-radius: 50%;
+        background: $base-color;
+        width: 6px;
+        height: 6px;
+      }
+    }
+
+    .calculations {
+      display: flex;
+      margin: 69px 0 35px 0;
+      padding: 4px 115px 4px 21px;
+      background-color: $dark-blue-opacity;
+      border: 1px solid $dark-blue;
+      border-radius: 16px;
+      align-items: center;
+      justify-content: space-between;
+
+      .fee-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+
+      .fee-title {
+        @include space-mono-regular;
+        font-size: 17px;
+        line-height: 26px;
+        letter-spacing: -0.025em;
+        opacity: 0.5;
+      }
+      .fee-numbers {
+        @include space-mono-regular;
+        font-size: 22px;
+        line-height: 26px;
+        letter-spacing: -0.025em;
+      }
+
+      .math-symbols {
+        font-size: 58px;
+        line-height: 69px;
+        letter-spacing: -0.035em;
+        color: $white;
+      }
+    }
+  }
+}
+
+
+.transaction-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+  margin-bottom: 44px;
+  padding: 0 18px;
+
+  .info-block {
+    display: flex;
+    align-items: center;
+    .block-content {
+      display: flex;
+      flex-direction: column;
+      margin-left: 6px;
+    }
+    .content-title {
+      @include altasi-regular;
+      margin: 0;
+      font-size: 16px;
+      line-height: 23px;
+      letter-spacing: -0.025em;
+    }
+    .content-row {
+      @include space-mono-regular;
+      margin: 0;
+      font-size: 13px;
+      line-height: 20px;
+    }
+  }
+}
+

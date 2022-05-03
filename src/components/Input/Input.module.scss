@@ -1,0 +1,60 @@
+@import "../../styles/common";
+.currency-block {
+  padding: 23px 0 32px 29px;
+  border-radius: 16px;
+  background-color: $dark-blue;
+  @include space-mono-bold;
+
+  .title {
+    @include space-mono-bold;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -0.025em;
+  }
+
+  .input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+
+    .input {
+      @include space-mono-bold;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      width: 100%;
+      padding-left: 6px;
+      font-size: 40px;
+      line-height: 47px;
+      letter-spacing: -0.035em;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      &[type=number] {
+        -moz-appearance: textfield;
+      }
+    }
+
+    .currency {
+      display: flex;
+      align-items: center;
+
+      .currency-name {
+        @include space-mono-bold;
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: -0.035em;
+        margin-right: 20px;
+      }
+
+      .arrow {
+        margin: 0 12px 0 7px;
+      }
+    }
+  }
+}

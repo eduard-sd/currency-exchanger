@@ -1,0 +1,29 @@
+$base-color: #474767;
+$dark-blue: #33334B;
+$dark-blue-opacity: rgba(51, 51, 75, 0.43);
+$light-blue: #62688F;
+$white: #FFFFFF;
+$primary: #783AFF;
+$primary-soft: #783AFFDD;
+
+
+@mixin space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  color: $white;
+  font-feature-settings: 'pnum' on, 'onum' on;
+}
+
+@mixin  space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  color: $white;
+  font-feature-settings: 'pnum' on, 'onum' on;
+}
+
+@mixin altasi-regular {
+  font-family: "Alatsi", sans-serif;
+  font-weight: 400;
+  color: $white;
+  font-feature-settings: 'pnum' on, 'onum' on;
+}
