@@ -1,5 +1,5 @@
 import axios from "axios";
-import {ICurrencyExchangeRequest, ICurrencyExchangeResponse} from "../types/common";
+import { ICurrencyExchangeRequest, ICurrencyExchangeResponse } from "../types/common";
 
 const REST_URL = 'https://api-qjoa5a5qtq-uc.a.run.app/';
 
